@@ -1,0 +1,31 @@
+.similarProducts {
+	margin-bottom: 20px;
+	.similarProductsContainer {
+		h3 {
+			font-size: 1.75rem;
+			color: var(--secondary-color);
+			margin-top: 74px;
+			margin-bottom: 10px;
+		}
+		h4 {
+			font-size: 22px;
+			color: #575756;
+			font-weight: 300;
+		}
+		.products {
+			display: flex;
+			flex: content;
+			overflow-x: scroll;
+			padding: 24px 0;
+			&::-webkit-scrollbar {
+				height: 5px;
+			}
+			&::-webkit-scrollbar-track {
+				background: #d9d9d9;
+			}
+			&::-webkit-scrollbar-thumb {
+				background: var(--secondary-color);
+			}
+		}
+	}
+}

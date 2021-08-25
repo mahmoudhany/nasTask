@@ -1,0 +1,38 @@
+.categories {
+	background-color: var(--black-color);
+	.categoriesContainer {
+		display: flex;
+		justify-content: space-between;
+		li {
+			a {
+				display: flex;
+				align-items: center;
+				font-size: 0.875rem;
+				font-weight: 600;
+				color: white;
+				padding: 10px 0;
+				margin: 5px 0;
+				&:hover,
+				&:focus {
+					color: #f11133;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 992px) {
+	.categories {
+		.categoriesContainer {
+			flex-direction: column;
+			align-items: center;
+			padding: 10px 0;
+			li {
+				a {
+					margin: 0;
+					justify-content: center;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

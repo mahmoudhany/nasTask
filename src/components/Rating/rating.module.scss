@@ -1,0 +1,19 @@
+.rate {
+	margin: 0.9375rem 0;
+	display: flex;
+	.stars {
+		img {
+			padding: 0 2px;
+		}
+	}
+	.ratePercent {
+		margin: 0 10px;
+		font-weight: 600;
+		font-size: 1.0625rem;
+	}
+	.ratesCount {
+		color: #575756;
+		font-size: 0.9375rem;
+		font-weight: 500;
+	}
+}

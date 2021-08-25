@@ -1,0 +1,41 @@
+:root {
+	--primary-color: #fff100;
+	--secondary-color: #542e90;
+	--black-color: #1d1d1b;
+	--border-color: #d8d8d8;
+	--font: "Montserrat", sans-serif;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: var(--font);
+}
+
+body {
+	font-family: var(--font);
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	border: 0;
+	background: none;
+	outline: none;
+	cursor: pointer;
+}
+button:hover {
+	opacity: 0.9;
+}
+
+.container {
+	width: 90vw;
+	margin: 0 auto;
+}
