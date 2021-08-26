@@ -18,13 +18,30 @@ class Header extends Component {
         <div className="container">
           <div className={styles.headerContainer}>
             <div className={styles.logoContainer}>
-              <button onClick={this.handleToggle}>
+              <button
+                className={styles.menuBtn}
+                onClick={this.handleToggle}
+              >
                 <Icon
                   src="/images/toggleIcon.svg"
                   alt="toggleIcon"
                 />
               </button>
-              <img className={styles.blackLogo} src="/images/blackLogo.svg" alt="" />
+
+              <button
+                className={styles.menuBtnLg}
+              >
+                <Icon
+                  src="/images/toggleIcon.svg"
+                  alt="toggleIcon"
+                />
+              </button>
+
+              <img
+                className={styles.blackLogo}
+                src="/images/blackLogo.svg"
+                alt=""
+              />
             </div>
             <div className={styles.offers}>
               <Icon

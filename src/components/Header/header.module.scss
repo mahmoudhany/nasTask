@@ -6,9 +6,16 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 9px 0;
+
 		.logoContainer {
 			display: flex;
 			align-items: center;
+			.menuBtn {
+				display: none;
+			}
+			.menuBtnLg {
+				display: block;
+			}
 			.blackLogo {
 				margin-left: 2rem;
 			}
@@ -32,7 +39,6 @@
 				}
 			}
 		}
-
 		.operations {
 			display: flex;
 			justify-content: space-between;
@@ -59,15 +65,17 @@
 @media screen and (max-width: 992px) {
 	.header {
 		.logoContainer {
+			.menuBtn {
+				display: block !important;
+			}
+			.menuBtnLg {
+				display: none !important;
+			}
 			.blackLogo {
 				display: none;
 			}
 		}
 		.headerContainer {
-			.operations {
-				display: none;
-			}
-
 			.mobileOpertation {
 				display: flex;
 				flex-direction: column;
@@ -94,6 +102,9 @@
 @media screen and (max-width: 1180px) {
 	.header {
 		.headerContainer {
+			.operations {
+				display: none;
+			}
 			.logoContainer {
 				button {
 					padding: 10px 0;
